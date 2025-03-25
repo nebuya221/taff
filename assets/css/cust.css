@@ -1,0 +1,7 @@
+/* Personnalisation des images */
+.image.featured {
+    width: 200px;
+    height: 300px;
+    object-fit: cover; /* Conserve les proportions de l'image */
+    object-position: center top; /* Centre l'image verticalement */
+}
