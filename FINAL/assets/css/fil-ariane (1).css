@@ -1,0 +1,48 @@
+#header .fil-ariane-container{
+	display:block;
+	position:relative;
+	z-index:1;
+	width:auto;
+	max-width:800px;
+	padding:10px;
+	
+}
+.fil-ariane {
+ 	display: flex;
+ 	align-items:center;
+ 	gap:8px;
+ 	list-style: none;
+  	padding: 0;
+  	margin: 0;
+}
+
+.fil-ariane li {
+	display: inline;
+ 	margin-right: 10px;
+}
+			
+.fil-ariane li::after {
+  	content: " › ";
+  	margin-left: 10px;
+ 	color: grey;
+}
+
+.fil-ariane li:last-child::after {
+	content: ""; 
+}
+.fil-ariane li a {
+	text-decoration: none;
+ 	color: teal;
+  	font-weight: normal;
+}
+
+.fil-ariane li.active a {
+  	font-weight: bold;
+  	color: darkblue;
+}
+@media (max-width:768px){
+	.fil-ariane{
+		display:flex;
+		font-size:14px;
+	}
+}

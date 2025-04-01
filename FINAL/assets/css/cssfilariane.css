@@ -1,0 +1,35 @@
+.fil-ariane-container {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fil_ariane {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.fil_ariane li {
+    display: inline;
+}
+
+.fil_ariane li a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.fil_ariane li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.fil_ariane .active {
+    font-weight: bold;
+    color: #333;
+}
