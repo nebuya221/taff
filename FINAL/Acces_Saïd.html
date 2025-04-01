@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Acces – Festival du Cinéma de Bruxelles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Author" content="Saïd Kaouane"/>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/programme.css" />
+  <link rel="icon" type="image/ico" href="images/favicon.ico" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="assets\css/map.css"/>
+
+
+  <!-- Lier le fichier CSS personnalisé -->
+  <link rel="stylesheet" href="map.css" />
+</head>
+<body class="index is-preload">
+  <div id="page-wrapper">
+    <header id="header"> 
+        <h1 id="logo"><a href="index.html">Cinéma De Bruxelles</a></h1>
+      
+        <nav id="nav">
+          <ul>
+            <li class="current"><a href="index.html">Bienvenue</a></li>
+            <li class="submenu">
+              <a href="#">Menu</a>
+              <ul>
+                <li><a href="index_aziz.html">Accueil</a></li>
+      <li><a href="pay.html">Présentation</a></li>
+      <li><a href="pasteditions_page.html">Édition précédente</a></li>
+      <li><a href="films_page.html">Films</a></li>
+      <li><a href="Programme_Aziz.html">Programme</a></li>
+      <li><a href="Tarifs_Saïd.html">Tarif</a></li>
+      <li><a href="Acces_Saïd.html">Accès</a></li>
+      <li><a href="invités_azad.html">Invité</a></li>
+      <li><a href="boutique_azad.html">Boutique</a></li>
+      <li><a href="activités_azad.html">Activité</a></li>
+      <li><a href="streaming_page.html">Plateforme</a></li>
+      <li><a href="say.html">Sponsors</a></li>
+      <li><a href="Termes_et_Conditions_Aziz.html">Termes et Conditions</a></li>
+    
+              </ul>
+            </li>
+            <li><a href="#" class="button primary">S'enregistrer</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <!-- Main -->
+    <article id="main">
+      <header class="special container">
+        <span class="icon solid fa-film"></span>
+        <h2>Acces - Localisation</h2>
+      </header>
+      <h2>Localisation du Festival</h2>
+      <p>Le festival se déroule au <strong>TIFF Lightbox</strong>, un centre culturel situé dans le centre-ville de Bruxelles, Belgique.</p>
+      <p>Adresse : <strong>Rue de la Loi numéro 1, Bruxelles.</strong></p>
+      <p>Découvrez nos expositions temporaires, assistez à des projections et explorez notre bibliothèque de films.</p>
+
+      <!-- Carte sous la description de la bibliothèque de films -->
+      <div id="map"></div>
+
+      <section class="wrapper style4 container">
+        <div class="content">
+          <section id="transport">
+            <h2>MOYENS DE TRANSPORTS</h2>
+            <p>Pour se rendre au festival, plusieurs options de transport s'offrent à vous :</p>
+            <ul>
+                <li><strong>Métro : </strong>La station Art-lois est la plus proche (Ligne 1, direction Elisabeth).</li>
+                <li><strong>Bus : </strong>Des lignes de bus passent près du festival, avec un arrêt à <strong>Porte de Namur</strong>.</li>
+                <li><strong>Vélo : </strong>Des stations de location de vélos sont disponibles à proximité.</li>
+                <li><strong>Voiture : </strong>Il y a plusieurs parkings payants autour du festival.</li>
+            </ul>
+        </section>
+        </div>
+      </section>
+    </article>
+
+<section id="cta"> 
+						  <footer>
+							<ul class="buttons">
+							  <li><a href="cay.html" class="button primary">CONTACT US</a></li>
+							  <li><a href="FAQ_Saïd.html" class="button">FAQ</a></li>
+							</ul>
+						  </footer>
+					</section>
+
+
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://x.com" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://dribbble.com" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map').setView([50.8466, 4.3691], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([50.8466, 4.3691]).addTo(map)
+    .bindPopup("Métro Arts-Loi<br>Bruxelles")
+    .openPopup();
+</script>
+
+	</body>
+</html>
