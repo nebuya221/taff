@@ -1,0 +1,185 @@
+/* assets/css/custom.css */
+
+/* Fil d'Ariane */
+.fil-ariane-container {
+    padding: 1rem 2rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2em;
+}
+
+.fil-ariane {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5em;
+    font-size: 0.9em;
+}
+
+.fil-ariane li:not(:last-child)::after {
+    content: "›";
+    margin-left: 0.5em;
+    color: #666;
+}
+
+.fil-ariane a {
+    color: #3fb1a3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fil-ariane .active {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+/* Alignement général */
+.row.gtr-50 {
+    display: flex !important;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 2em 0 !important;
+    gap: 2em;
+}
+
+.col-4, .col-3 {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+    padding: 0 1em !important;
+}
+
+.col-8, .col-9 {
+    flex: 0 0 66.666% !important;
+    max-width: 66.666% !important;
+    padding: 0 1em !important;
+}
+
+/* Images */
+.image.featured {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image.featured:hover {
+    transform: translateY(-5px);
+}
+
+/* Cartes */
+.box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2em !important;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Typographie */
+.role {
+    color: #3fb1a3;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.bio {
+    line-height: 1.7;
+    color: #666;
+    margin-top: 1em;
+}
+
+/* Section Acteurs - Uniformisation */
+.box.actor .row.gtr-50 {
+    display: flex !important;
+    align-items: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+    .row.gtr-50 {
+        gap: 1em;
+    }
+    
+    .col-4, .col-3,
+    .col-8, .col-9 {
+        padding: 0 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .row.gtr-50 {
+        flex-direction: column !important;
+        margin: 1em 0 !important;
+        gap: 1.5em;
+    }
+    
+    .col-4, .col-3,
+    .col-8, .col-9 {
+        flex: 1 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .image.featured {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .box {
+        padding: 1.5em !important;
+    }
+}
+
+/* Améliorations visuelles */
+header.major h3 {
+    font-size: 1.75em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3fb1a3;
+    display: inline-block;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Couleurs */
+a {
+    color: #3fb1a3;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2c3e50;
+}
+
+/* Pied de page */
+#footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 4em 0;
+    margin-top: 4em;
+}
+
+#footer .copyright {
+    color: rgba(255,255,255,0.8);
+}
+
+#footer .icons a {
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#footer .icons a:hover {
+    opacity: 1;
+}
+/* Personnalisation des images */
+.image.featured {
+    width: 200px;
+    height: 300px;
+    object-fit: cover; /* Conserve les proportions de l'image */
+    object-position: center top; /* Centre l'image verticalement */
+}
