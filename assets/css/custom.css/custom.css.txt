@@ -1,0 +1,28 @@
+/* Alignement image + texte */
+.row.gtr-50 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.col-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+.col-8 {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .row.gtr-50 {
+        flex-direction: column;
+    }
+    
+    .col-4 {
+        max-width: 100%;
+        width: 100%;
+    }
+}
